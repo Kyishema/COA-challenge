@@ -1,0 +1,150 @@
+/* Reset body styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Set background color to black */
+}
+
+/* Gallery container styles */
+.gallery {
+    display: flex; /* Display as flexbox */
+    width: 1178px; /* Fixed width */
+    height: 588px; /* Fixed height */
+    top: 608px; /* Position from top */
+    left: -355px; /* Position from left */
+    gap: 2px; /* Gap between items */
+    opacity: 0px; /* Initial opacity */
+}
+
+/* Gallery item styles */
+.gallery-item {
+    width: 293px; /* Fixed width */
+    height: 588px; /* Fixed height */
+    gap: 0px; /* No gap */
+    opacity: 0px; /* Initial opacity */
+    position: relative; /* Position relative to parent */
+    box-shadow: 0px 4px 4px 0px #00000040; /* Add box shadow */
+}
+
+/* Hover effect on gallery item image */
+.gallery-item img:hover {
+    border: 2px solid #7A288A; /* Violet color border on hover */
+}
+
+/* Gallery item image styles */
+.gallery-item img {
+    width: 293px; /* Fixed width */
+    height: 588px; /* Fixed height */
+    gap: 0px; /* No gap */
+    opacity: 0px; /* Initial opacity */
+    display: flex; /* Display as flexbox */
+}
+
+/* Overlay styles */
+.gallery-item .overlay {
+    width: 293px; /* Fixed width */
+    height: 588px; /* Fixed height */
+    gap: 8px; /* Gap between items */
+    opacity: 0px; /* Initial opacity */
+    transition: opacity 0.3s ease; /* Transition effect */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%); /* Gradient background */
+}
+
+/* Title styles */
+.gallery-item .title {
+    position: absolute; /* Position absolute */
+    width: 293px; /* Fixed width */
+    height: 588px; /* Fixed height */
+    gap: 0px; /* No gap */
+    opacity: 0px; /* Initial opacity */
+    font-family: Poppins; /* Font family */
+    font-size: 30px; /* Font size */
+    font-weight: 600; /* Font weight */
+    line-height: 34.5px; /* Line height */
+    text-align: left; /* Text alignment */
+    color: #ffffff; /* Text color */
+    bottom: -460px; /* Position from bottom */
+    left: 20px; /* Position from left */
+}
+
+/* Subtitle styles */
+.gallery-item .subtitle {
+    position: absolute; /* Position absolute */
+    width: 213px; /* Fixed width */
+    height: 76px; /* Fixed height */
+    gap: 0px; /* No gap */
+    opacity: 0px; /* Initial opacity */
+    font-family: DIN Condensed; /* Font family */
+    font-size: 38px; /* Font size */
+    font-weight: 600; /* Font weight */
+    line-height: 38px; /* Line height */
+    text-align: left; /* Text alignment */
+    color: rgb(255, 255, 255); /* Text color */
+    bottom: 20px; /* Position from bottom */
+    left: 20px; /* Position from left */
+}
+
+/* Info styles */
+.gallery-item .info {
+    position: absolute; /* Position absolute */
+    bottom: 20px; /* Position from bottom */
+    left: 20px; /* Position from left */
+    color: white; /* Text color */
+    font-family: Poppins; /* Font family */
+    font-size: 12px; /* Font size */
+    font-weight: 400; /* Font weight */
+    line-height: 16.02px; /* Line height */
+    text-align: left; /* Text alignment */
+}
+
+/* H1 styles */
+h1 {
+    text-align: left; /* Text alignment */
+    margin-top: 10px; /* Margin top */
+    color: gray; /* Text color */
+    font-family: poppins; /* Font family */
+    font-size: small; /* Font size */
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .gallery {
+       flex-direction: column; /* Add this to make the gallery items stack vertically */
+     }
+    .gallery-item {
+       flex: 1 1 100%; /* Make each item take up the full width */
+       max-width: 100%;
+     }
+     img {
+       width: 100%; /* Make the image take up the full width of its parent */
+       height: auto; /* Maintain the aspect ratio */
+     }
+   }
+   
+   @media (max-width: 768px) {
+    .gallery {
+       flex-direction: column; /* Keep the gallery items stacking vertically */
+     }
+    .gallery-item {
+       flex: 1 1 100%; /* Make each item take up the full width */
+       max-width: 100%;
+     }
+     img {
+       width: 100%; /* Make the image take up the full width of its parent */
+       height: auto; /* Maintain the aspect ratio */
+     }
+   }
+   
+   @media (max-width: 480px) {
+    .gallery {
+       flex-direction: column; /* Keep the gallery items stacking vertically */
+     }
+    .gallery-item {
+       flex: 1 1 100%; /* Make each item take up the full width */
+       max-width: 100%;
+     }
+     img {
+       width: 100%; /* Make the image take up the full width of its parent */
+       height: auto; /* Maintain the aspect ratio */
+     }
+   }
